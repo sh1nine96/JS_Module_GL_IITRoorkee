@@ -1,0 +1,29 @@
+[
+    {
+        "name": "PS3",
+        "description": "video game",
+        "price": 35000,
+        "rating": {
+            "min": 2,
+            "max": 10
+        }
+    },
+
+    {
+        "name": "PS2",
+        "description": "video game 2nd gen",
+        "price": 15000,
+        "rating": {
+            "min": 2,
+            "max": 10
+        }
+
+    },
+
+    {
+        "name": "PS",
+        "description": "video game 1st gen",
+        "price": 5000
+
+    }
+]
