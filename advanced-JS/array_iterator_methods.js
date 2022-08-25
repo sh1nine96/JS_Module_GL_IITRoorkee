@@ -7,7 +7,7 @@ var days = [
     {day: `Friday`, hours: 8},
     {day: `Saturday`, hours: 5}
 ]
-// forEach
+//forEach=> calls a function for each element of array, forEach takes 2 args value, index & array
 
 days.forEach(function(item){
     console.log(item);
