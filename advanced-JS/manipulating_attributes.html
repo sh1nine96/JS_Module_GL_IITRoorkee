@@ -1,19 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manipulation of attributes</title>
 </head>
+
 <body>
-    <img src="/pets.jpg" alt="pets image"> <br>
+    <img src="/pets.jpg"> <br>
     <button onclick="changeImage();">Change Image</button>
 
     <script>
-        function changeImage(){
-            document.querySelector('img').src = '/pup.jpg'
+        function changeImage() {
+            // document.querySelector('img').src = '/pup.jpg'
+
+            // hasAttribute=> returns true false, getAttribute => returns value, 
+            //setAttribute=> Sets attribute to the different value
+            console.log(document.querySelector('img').hasAttribute('src'));
+            console.log(document.querySelector('img').hasAttribute('alt'));
+
+            console.log(document.querySelector('img').getAttribute('src'));
+            document.querySelector('img').setAttribute('src', '/pup.jpg');
         }
     </script>
 </body>
+
 </html>
