@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Selection</title>
+</head>
+<body>
+    <p id="id1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur expedita eos tempora qui odit error incidunt unde labore illo delectus? Illum eum impedit laudantium id, molestiae incidunt iure molestias libero.</p>
+    <div class="class1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias facilis ipsa dolorum enim accusantium eligendi vitae maiores fugit sapiente? Placeat ipsum dolores esse dolorum quae unde nisi corporis, vitae a.</div>
+    <section class="class1 class2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Est eum quam, accusamus quis necessitatibus asperiores id, ipsum minima quidem illum commodi, ipsam quas non accusantium quasi rerum modi nostrum labore?</section>
+
+    <script>
+       var para1 = document.getElementById(`id1`);
+        console.log(para1);
+
+        var divElements = document.getElementsByClassName(`class1`);
+        console.log(divElements);
+        console.log(divElements[0]);
+        console.log(divElements[1]);
+        console.log(divElements.length);
+
+        var byTagName = document.getElementsByTagName(`section`);
+        console.log(byTagName)
+
+        // query selectors
+        var elmt = document.querySelector(`.class1`);
+        console.log(elmt);
+
+        var elmts = document.querySelectorAll(`.class1`);
+        console.log(elmts);
+        console.log(elmts[0]);
+        console.log(elmts[1]);
+        console.log(elmts.length);
+
+    </script>
+</body>
+</html>

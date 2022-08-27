@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inner HTML</title>
+</head>
+
+<body>
+    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde eum recusandae corporis et dicta doloribus dolore
+        iure facilis exercitationem, architecto, expedita eaque nisi eos aperiam qui, saepe repellat laborum
+        consequatur. At similique est numquam rem totam rerum. Et, tenetur quo ut, pariatur voluptates deserunt
+        accusamus iusto, praesentium exercitationem sit quia.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, sunt expedita asperiores ipsam nam ad
+        voluptates! Ex, adipisci provident voluptas, iste, cum eius hic dolores alias eligendi cupiditate natus dolor.
+    </p>
+
+    <!-- 
+      innerText will add the given value as a plain String while innerHTML will evaluate the given value as a HTML code. -->
+
+    <script>
+        // setTimeout(func,delaytime) calls a function(first argument) after a delay of some time(second argument in miliseconds).
+        setTimeout(() => {
+            document.querySelector(`p:first-of-type`).innerHTML = `<span>span1 </span>    
+                <span> Span2 </span>`;
+        }, 5000);
+
+        setTimeout(() => {
+            document.querySelector(`p:last-of-type`).innerText = `Only text should be provided here without tags`
+        }, 7000);
+    </script>
+</body>
+
+</html>

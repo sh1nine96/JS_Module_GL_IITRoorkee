@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Manipulation</title>
+    <style>
+        .fontBig{
+            font-size: 25px;
+        }
+        .blue{
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="blue">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident modi saepe laborum aut tempore itaque impedit
+        doloremque, nam cupiditate iste. Molestiae, commodi! Ut dolores repudiandae quia cum. Dolorem, ratione
+        molestias!
+    </p>
+    <button onclick="changecolor();">magicButton</button>
+
+    <script>
+        function changecolor(){
+            document.querySelector(`p`).style.color = `red`;
+            document.querySelector(`p`).style.backgroundColor = `aqua`;
+            // to add css class we can do as follows
+            document.querySelector('p').classList.add('fontBig');
+            // to remove class
+            document.querySelector('p').classList.remove('blue');
+        }
+
+    </script>
+</body>
+
+</html>

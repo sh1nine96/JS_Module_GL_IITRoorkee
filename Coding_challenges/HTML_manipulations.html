@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Manipulation</title>
+</head>
+
+<body>
+    <h2 class="header">I am the first H2 Tag</h2>
+    <h2 class="header">I am the second H2 tag</h2>
+    <h3 class="header">I am the first h3 tag</h3>
+    <h3 class="header">I am the second h3 tag</h3>
+    <h3 class="header">I am the third h3 tag</h3>
+    <div id="div">Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, totam quo. Magni dolores vitae
+        aliquam qui doloremque dolor error fuga modi ex deserunt consequatur nemo accusamus possimus facilis praesentium
+        placeat labore esse expedita hic harum vero, inventore ea recusandae minima. Neque quia laborum dolores odit
+        ipsam voluptatibus assumenda molestiae. Sequi!</div>
+    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nesciunt quas molestiae velit
+        doloremque quibusdam perspiciatis ipsum vel facilis incidunt tempora quaerat, amet suscipit repellat ullam nihil
+        facere corporis nemo!</p>
+    <p class="paragraph">Sunt voluptate alias quibusdam provident nam. Beatae quod repellendus magnam in dolore nesciunt
+        veniam nulla ea illum maiores, nisi distinctio rerum et facere quis doloribus fugiat impedit neque! Cumque,
+        nemo.</p>
+    <p class="paragraph">Perferendis facere esse blanditiis, molestias, illum repellendus fugit rem necessitatibus saepe
+        mollitia sequi consectetur repudiandae neque amet adipisci porro quaerat alias! Ipsam ratione hic soluta
+        nesciunt aut accusamus mollitia alias!</p>
+
+    <script>
+        setTimeout(() => {
+            document.querySelector(`#div`).innerHTML = `<h1>I am new H1</h1>`
+        }, 5000);
+        //      for loop
+        var headings = document.querySelectorAll(`.header`);
+        for (let i = 0; i < headings.length; i++) {
+            headings[i].innerText = `HEADINGS`;
+        }
+        //      forEach loop
+        var pTags = document.querySelectorAll(`.paragraph`);
+        pTags.forEach(item => {
+            item.innerText = `PARAGRPHS`;
+        })
+
+    </script>
+</body>
+
+</html>

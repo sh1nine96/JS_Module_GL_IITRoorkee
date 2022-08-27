@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom Challenge</title>
+</head>
+<body>
+    <h2>I am a H2 tag</h2>
+    <p id="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus sit minus sint distinctio unde illo quasi vitae quo quos esse accusantium facilis in, similique perspiciatis porro consequuntur est earum nulla?</p>
+    <p class="para2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda delectus error quae temporibus itaque et ex sit laudantium, tempora dolorum. In excepturi magnam, dolor atque, dignissimos numquam vitae porro sapiente dolores, voluptate eum repellendus eaque vel tempora neque velit doloribus!</p>
+
+    <script>
+        var h2Tag = document.getElementsByTagName(`h2`);
+        console.log(h2Tag);
+
+        var p1 = document.getElementById(`para1`);
+        console.log(p1);
+
+        var p2 = document.getElementsByClassName(`para2`);
+        console.log(p2);
+
+        var pCount = document.getElementsByTagName(`p`);
+        console.log(pCount.length)
+    </script>
+</body>
+</html>
