@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handlers</title>
+</head>
+<body>
+    <p id="para1">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas natus minima debitis exercitationem doloribus tempora. Ratione unde ipsa eaque ullam explicabo, asperiores dolore facere quam laborum neque mollitia minus quaerat.</p>
+    <!-- <button onclick="handleClick();">Click me</button> -->
+    <button>Click me</button>
+
+    
+    <script>
+        // <!-- load event -->
+        window.onload = ()=>{
+            alert(`the page has loaded`)
+        }
+        // click event
+        function handleClick(){
+            alert(`I was clicked`)
+        }
+        function handleClick2(){
+            alert(`I was clicked 2`)
+        }
+
+        // this way only the latest one will get executed & thats a drawback
+
+        document.querySelector(`button`).onclick = handleClick;
+        document.querySelector(`button`).onclick = handleClick2;
+
+        // mouseover event
+
+        // document.getElementById(`para1`).onmouseover =()=>{
+        //     console.log(`mouse is over para`)
+        // } 
+
+        // this way we can add as many event listerners all will execute
+        document.getElementById(`para1`).addEventListener(`mouseover`, ()=>{
+            console.log(`mouse is over para-1`);
+        })
+        
+        document.getElementById(`para1`).addEventListener(`mouseover`, ()=>{
+            console.log(`mouse is over para-1`);
+        })
+        document.getElementById(`para1`).addEventListener(`mouseover`, ()=>{
+            console.log(`mouse is over para-3`);
+        })
+
+
+    </script>
+</body>
+</html>
